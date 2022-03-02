@@ -1,0 +1,9 @@
+1) always validate the input when ovverriding methods and not only
+
+2) adding a throw method near a method signature to a method that is overriden we should
+
+3) never call a function that could not be processed
+
+4) it is a good idea to implement the constructor with parameters and make the default constuctor private/default
+
+5) the instances won't be stored in variables, they will be stored in generic collections
