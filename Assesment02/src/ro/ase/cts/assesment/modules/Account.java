@@ -47,6 +47,10 @@ public class Account {
         System.out.println("This is an account");
     }
 
+    public static  double computeLocalFee(double loan_value, double rate, int daysActive) {
+        return .0125	*	(	//	1.25%	broker's	fee
+                loan_value*Math.pow(rate,(daysActive/365)) - loan_value);
+    }
     public static double calculate(Account[] 	accounts)
     {
         double totalFee=0.0;
@@ -55,8 +59,7 @@ public class Account {
         for	(int	i=0;i<accounts.length;i++)	{
             account=accounts[i];
             if(account.account_Type==AccountType.PREMIUM||account.account_Type==AccountType.SUPER_PREMIUM)
-                totalFee+=.0125	*	(	//	1.25%	broker's	fee
-                        account.loan_value*Math.pow(account.rate,(account.daysActive/365)) - account.loan_value);	//	interest-principal
+                totalFee+= computeLocalFee(account.loan_value, account.rate, account.daysActive);	//	interest-principal
         }
         return	totalFee;
     }

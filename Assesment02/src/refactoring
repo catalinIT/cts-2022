@@ -20,3 +20,6 @@ In public classes, use accessor methods, not public fields, category - Classes a
 Use checked exceptions for recoverable conditions and runtime exceptions for programming errors, category - Exceptions
 
 8) Remove unused variable
+
+9) Generate a separate method responsible for computing a fee based on a rate, a loan_value and the number of days
+Do one Thing, category - Functions
