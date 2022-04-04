@@ -26,3 +26,6 @@ Do one Thing, category - Functions
 
 10) renaming the method that computes the total fee
 Use Intention-Revealing Names, category - Meaningful Names
+
+11) make it clear that the method toString is overriden
+Always override toString, category - General Programming

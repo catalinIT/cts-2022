@@ -39,9 +39,11 @@ public class Account {
         loan_value = value;
     }
 
-    public String to_string() {
+    @Override
+    public String toString() {
         return "Loan: "+this.loan_value+"; rate: "+this.rate+"; days active:"+daysActive+"; Type: "+account_Type+";";
     }
+
 
     public void print() {
         System.out.println("This is an account");
@@ -55,7 +57,6 @@ public class Account {
     {
         double totalFee=0.0;
         Account	account;
-        int temp = 365;
         for	(int	i=0;i<accounts.length;i++)	{
             account=accounts[i];
             if(account.account_Type==AccountType.PREMIUM||account.account_Type==AccountType.SUPER_PREMIUM)
