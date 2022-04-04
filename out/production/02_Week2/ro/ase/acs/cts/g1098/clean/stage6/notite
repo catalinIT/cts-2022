@@ -1,0 +1,4 @@
+1) the references for the other classes must be interfaces , AND NOT OBJECTS
+2) two strategies for dependency injection: by constructor vs. by setter ( advantage for the setter - allows us to change the refrence at any moment in time
+3) if the reference has a major importance withing the defined class, inject when building the object
+4) extending RuntimeException - eliminate the need to use throws at signitures within our code
