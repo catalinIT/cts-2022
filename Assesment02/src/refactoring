@@ -18,3 +18,5 @@ In public classes, use accessor methods, not public fields, category - Classes a
 
 7) Refactor the setter so it throws a more specific type of exception
 Use checked exceptions for recoverable conditions and runtime exceptions for programming errors, category - Exceptions
+
+8) Remove unused variable

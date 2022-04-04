@@ -44,7 +44,6 @@ public class Account {
     }
 
     public void print() {
-        int vb = 10;
         System.out.println("This is an account");
     }
 
