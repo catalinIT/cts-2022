@@ -3,10 +3,13 @@ package ro.ase.cts.assesment.modules;
 import ro.ase.cts.assesment.enums.AccountType;
 
 public class Account {
-    public double	loan_value,rate;
-    public int	daysActive;
-    public AccountType account_Type;
+    private double	loan_value,rate;
+    private int	daysActive;
+    private AccountType account_Type;
 
+    public int getDaysActive() {
+        return daysActive;
+    }
 
     public double loan() {
         return loan_value;

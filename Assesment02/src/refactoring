@@ -6,3 +6,12 @@ Do one Thing, category - Functions
 
 3) Generate a separate method responsible for printing out the rate
 Do one Thing, category - Functions
+
+4) Change the visibility status of loan and rate
+In public classes, use accessor methods, not public fields, category - Classes and Interfaces
+
+5) Change the visibility status of days_active attribute
+In public classes, use accessor methods, not public fields, category - Classes and Interfaces
+
+6) Change the visibility status of account type attribute
+In public classes, use accessor methods, not public fields, category - Classes and Interfaces
