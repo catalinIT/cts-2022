@@ -1,9 +1,12 @@
 package ro.ase.cts.assesment.modules;
 
+import ro.ase.cts.assesment.enums.AccountType;
+
 public class Account {
     public double	loan_value,rate;
-    public int	daysActive,account_Type;
-    public static final int	STANDARD=0,BUDGET=1,PREMIUM=2,SUPER_PREMIUM=3;
+    public int	daysActive;
+    public AccountType account_Type;
+
 
     public double loan() {
         System.out.println("The loan value is " + this.loan_value);
@@ -45,14 +48,14 @@ public class Account {
         int temp = 365;
         for	(int	i=0;i<accounts.length;i++)	{
             account=accounts[i];
-            if(account.account_Type==Account.PREMIUM||account.account_Type==Account.SUPER_PREMIUM)
+            if(account.account_Type==AccountType.PREMIUM||account.account_Type==AccountType.SUPER_PREMIUM)
                 totalFee+=.0125	*	(	//	1.25%	broker's	fee
                         account.loan_value*Math.pow(account.rate,(account.daysActive/365)) - account.loan_value);	//	interest-principal
         }
         return	totalFee;
     }
 
-    public Account(double value, double rate, int account_Type) throws Exception {
+    public Account(double value, double rate, AccountType account_Type) throws Exception {
         if(value<0)
             throw new Exception();
         else
