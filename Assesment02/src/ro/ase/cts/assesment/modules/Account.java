@@ -7,6 +7,14 @@ public class Account {
     private int	daysActive;
     private AccountType account_Type;
 
+    public double getLoan_value() {
+        return loan_value;
+    }
+
+    public AccountType getAccount_Type() {
+        return account_Type;
+    }
+
     public int getDaysActive() {
         return daysActive;
     }
@@ -47,22 +55,6 @@ public class Account {
 
     public void print() {
         System.out.println("This is an account");
-    }
-
-    public static  double computeLocalFee(double loan_value, double rate, int daysActive) {
-        return .0125	*	(	//	1.25%	broker's	fee
-                loan_value*Math.pow(rate,(daysActive/365)) - loan_value);
-    }
-    public static double calculateTotalFee(Account[] 	accounts)
-    {
-        double totalFee=0.0;
-        Account	account;
-        for	(int	i=0;i<accounts.length;i++)	{
-            account=accounts[i];
-            if(account.account_Type==AccountType.PREMIUM||account.account_Type==AccountType.SUPER_PREMIUM)
-                totalFee+= computeLocalFee(account.loan_value, account.rate, account.daysActive);	//	interest-principal
-        }
-        return	totalFee;
     }
 
     public Account(double value, double rate, AccountType account_Type) throws IllegalArgumentException {

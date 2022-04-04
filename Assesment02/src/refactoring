@@ -32,3 +32,6 @@ Always override toString, category - General Programming
 
 12) Refactor the parameter constructor so it throws a more specific type of exception
     Use checked exceptions for recoverable conditions and runtime exceptions for programming errors, category - Exceptions
+
+13) Adhere to the single responsability principle by creating a separate class that has to purpose to compute the fee associated with an array of account
+  Classes should be small!, Categoru - Classes
