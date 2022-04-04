@@ -3,3 +3,6 @@ Use enums instead of int constants, category - Enums and Annotations
 
 2) Generate a separate method responsible for printing out the loan_value
 Do one Thing, category - Functions
+
+3) Generate a separate method responsible for printing out the rate
+Do one Thing, category - Functions

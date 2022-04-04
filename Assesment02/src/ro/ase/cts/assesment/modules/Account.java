@@ -12,13 +12,16 @@ public class Account {
         return loan_value;
     }
 
-    public void printLoam() {
+    public void printLoan() {
         System.out.println("The loan value is " + this.loan_value);
     }
 
     public double getRate() {
-        System.out.println("The rate is "+rate);
         return this.rate;
+    }
+
+    public void printRate() {
+        System.out.println("The rate is "+rate);
     }
 
     //must have method - the lead has requested it in all classes
