@@ -51,7 +51,7 @@ public class Account {
         return .0125	*	(	//	1.25%	broker's	fee
                 loan_value*Math.pow(rate,(daysActive/365)) - loan_value);
     }
-    public static double calculate(Account[] 	accounts)
+    public static double calculateTotalFee(Account[] 	accounts)
     {
         double totalFee=0.0;
         Account	account;

@@ -23,3 +23,6 @@ Use checked exceptions for recoverable conditions and runtime exceptions for pro
 
 9) Generate a separate method responsible for computing a fee based on a rate, a loan_value and the number of days
 Do one Thing, category - Functions
+
+10) renaming the method that computes the total fee
+Use Intention-Revealing Names, category - Meaningful Names
