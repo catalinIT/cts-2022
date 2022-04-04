@@ -9,8 +9,11 @@ public class Account {
 
 
     public double loan() {
-        System.out.println("The loan value is " + this.loan_value);
         return loan_value;
+    }
+
+    public void printLoam() {
+        System.out.println("The loan value is " + this.loan_value);
     }
 
     public double getRate() {

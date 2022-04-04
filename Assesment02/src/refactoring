@@ -1,2 +1,5 @@
 1) Replace STANDARD, PREMIUM, BUDGET and SUPER_PREMIUM attributes
 Use enums instead of int constants, category - Enums and Annotations
+
+2) Generate a separate method responsible for printing out the loan_value
+Do one Thing, category - Functions
