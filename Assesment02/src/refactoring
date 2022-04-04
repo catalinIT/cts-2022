@@ -15,3 +15,6 @@ In public classes, use accessor methods, not public fields, category - Classes a
 
 6) Change the visibility status of account type attribute
 In public classes, use accessor methods, not public fields, category - Classes and Interfaces
+
+7) Refactor the setter so it throws a more specific type of exception
+Use checked exceptions for recoverable conditions and runtime exceptions for programming errors, category - Exceptions

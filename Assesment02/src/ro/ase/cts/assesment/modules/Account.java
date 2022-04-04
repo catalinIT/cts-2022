@@ -32,13 +32,11 @@ public class Account {
         return loan_value*rate;
     }
 
-    public void setValue(double value) throws Exception {
-        if(value<0)
-            throw new Exception();
-        else
-        {
-            loan_value = value;
+    public void setValue(double value) throws IllegalArgumentException {
+        if(value<0) {
+            throw new IllegalArgumentException();
         }
+        loan_value = value;
     }
 
     public String to_string() {
