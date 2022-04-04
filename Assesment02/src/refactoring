@@ -29,3 +29,6 @@ Use Intention-Revealing Names, category - Meaningful Names
 
 11) make it clear that the method toString is overriden
 Always override toString, category - General Programming
+
+12) Refactor the parameter constructor so it throws a more specific type of exception
+    Use checked exceptions for recoverable conditions and runtime exceptions for programming errors, category - Exceptions

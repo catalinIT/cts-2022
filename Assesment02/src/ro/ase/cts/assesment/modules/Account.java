@@ -65,13 +65,12 @@ public class Account {
         return	totalFee;
     }
 
-    public Account(double value, double rate, AccountType account_Type) throws Exception {
-        if(value<0)
-            throw new Exception();
-        else
-        {
-            loan_value = value;
+    public Account(double value, double rate, AccountType account_Type) throws IllegalArgumentException {
+        if(value<0) {
+            throw new IllegalArgumentException();
         }
+
+        this.loan_value = value;
         this.rate = rate;
         this.account_Type = account_Type;
     }
